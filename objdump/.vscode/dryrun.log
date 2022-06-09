@@ -1,0 +1,10 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/matt/delivery/TEK2/nm_objdump/objdump'
+cc -W -Wall -Wextra -Werror -g -g3 -I ./include/    -c -o main.o main.c
+cc -W -Wall -Wextra -Werror -g -g3 -I ./include/    -c -o src/check.o src/check.c
+cc -W -Wall -Wextra -Werror -g -g3 -I ./include/    -c -o src/parser.o src/parser.c
+cc -W -Wall -Wextra -Werror -g -g3 -I ./include/    -c -o src/utils.o src/utils.c
+cc -W -Wall -Wextra -Werror -g -g3 -I ./include/    -c -o src/display.o src/display.c
+gcc main.o src/check.o src/parser.o src/utils.o src/display.o -o objdump -I ./include/ -W -Wall -Wextra -Werror -g -g3
+make: Leaving directory '/home/matt/delivery/TEK2/nm_objdump/objdump'
+ 
